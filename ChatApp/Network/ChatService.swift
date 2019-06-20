@@ -37,7 +37,7 @@ extension ChatService: TargetType {
     var sampleData: Data {
         switch self {
         case .test:
-            return "Este es el request de prueba".utf8Encoded
+            return "Este es el request de prueba. Para usarlo en tests".utf8Encoded
         case .getMessages(let sender, let nickname):
             return "\(sender) \(nickname))".utf8Encoded
         case .getMoreMessages(let sender, let nickname, let LastMessage):
